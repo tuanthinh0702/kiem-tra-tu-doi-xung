@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+
+<script>
+
+function kiemtrachuoi(arr) {
+  let check = true ;
+  let i = 0;
+  while (i < arr.length - 1)
+  {
+    if(arr[i] == arr[arr.length - i - 1] )
+    {
+      i++;
+
+    }
+    else
+    {
+      check = false;
+      break;
+    }
+  }
+if(check == true)
+{
+  document.write("la chuoi doi xung");
+}
+else
+{
+  document.write("khong la chuoi doi xung");
+
+}
+}
+//let arr = [123456];
+kiemtrachuoi("123456789987")
+
+</script>
+</body>
+</html>
